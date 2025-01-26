@@ -11,3 +11,9 @@ Output from running this is included in `data.ods` and in these graphs (horizont
 ![Plot curves generally upwards, there is a pronounced bump at 40](multiball-1m-runs-regular-plot.png)
 
 ![Plot starts steep and levels off, several less smooth points, most pronounced at 40](multiball-1m-runs-log-plot.png)
+
+`balls3-multi-size2.py` investigates this question for different board sizes from 2x2 to 9x9, with 100k runs each time. 
+
+Output here is included in `data2.ods` and in this log graph
+
+¬[Multiple curves, all a bit jaggedy](multicolours-100k-runs-log-plot-up-to-9x9.png)
