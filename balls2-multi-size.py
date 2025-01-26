@@ -1,7 +1,7 @@
 # fills the board a million times each with 1-80 balls
 # and plots the results on regular and y-log scales.
 
-import matplotlib.pyplot as ppt
+import matplotlib.pyplot as plt
 from random import shuffle
 
 runs = 10**6
@@ -69,8 +69,8 @@ for num_balls in range(1,81):
     num_balls_set.append(num_balls)
     successes_set.append(runs-matches)
 
-ppt.plot(num_balls_set,successes_set)
-ppt.savefig("multiball-1m-runs-regular-plot.png")
-ppt.plot(num_balls_set,successes_set)
-ppt.yscale('log')
-ppt.savefig("multiball-1m-runs-log-plot.png")
+plt.plot(num_balls_set,successes_set)
+plt.savefig("multiball-1m-runs-regular-plot.png")
+plt.plot(num_balls_set,successes_set)
+plt.yscale('log')
+plt.savefig("multiball-1m-runs-log-plot.png")
