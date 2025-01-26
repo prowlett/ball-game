@@ -6,7 +6,7 @@
 import matplotlib.pyplot as plt
 from random import shuffle
 
-runs = 10**5
+runs = 10**6
 
 boards_tried = []
 
@@ -76,8 +76,14 @@ for b in range(2,10):
 
     plt.plot(num_balls_set,successes_set)
     
-plt.legend(boards_tried)
-plt.xlabel("No. colours")
-plt.ylabel("No. times out of 100k with an adjacent pair")
-plt.yscale('log')
-plt.savefig(f"multicolours-100k-runs-log-plot-up-to-{b}x{b}.png")
+    f = open(f"multicolours-1m-runs-{b}x{b}.csv","w+")
+    f.write("Colours, Runs with match, Runs with no match\n")
+    for row in range(len(num_balls_set)):
+        f.write(f"{num_balls_set[row]},{runs-successes_set[row]},{successes_set[row]}\n")
+    f.close()
+
+    plt.legend(boards_tried)
+    plt.xlabel("No. colours")
+    plt.ylabel("No. times out of 1m with an adjacent pair")
+    plt.yscale('log')
+    plt.savefig(f"multicolours-1m-runs-log-plot-up-to-{b}x{b}.png")
