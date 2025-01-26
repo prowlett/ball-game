@@ -1,5 +1,7 @@
 # Maths for a game involving balls
 
+**To do: fix mislabelled vertical axis on `multicolours-1m-runs-log-plot-up-to-9x9.png`, should say "No. times out of 1m with no pair adjacent".**
+
 Game set up involves placing 80 balls in 6 colours on a 9 by 9 board, with no board in the centre. Instructions say to place these randomly, and then says "The idea is that beads of the same color should not be adjacent, horizontal or vertical."
 
 `balls1-9balls.py` investigates this question for 6 colours in the proportions included in the game: 20 red, 15 green and yellow, and 10 blue, orange and purple. 
