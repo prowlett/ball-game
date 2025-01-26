@@ -16,4 +16,4 @@ Output from running this is included in `data.ods` and in these graphs (horizont
 
 Output here is included in `data2.ods` and in this log graph
 
-¬[Multiple curves, all a bit jaggedy](multicolours-100k-runs-log-plot-up-to-9x9.png)
+![Multiple curves, all a bit jaggedy](multicolours-100k-runs-log-plot-up-to-9x9.png)
